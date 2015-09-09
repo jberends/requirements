@@ -1,0 +1,23 @@
+psycopg2>=2.6
+
+# django packages
+Django>=1.8
+djangorestframework>=3.1
+django-mptt
+django-filter>=0.10
+django-polymorphic-tree
+
+requests
+cutplace
+
+newrelic
+#DEV
+ipdb>=0.8
+ipython>=3
+django-extensions>=1.5.5
+django-debug-toolbar
+
+#TEST
+pytest-pythonpath>=0.6
+pytest-django>=2.8.0
+factory_boy>=2.5.2
