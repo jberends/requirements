@@ -1,23 +1,66 @@
-psycopg2>=2.6
+### BASE
+# Bleeding edge Django
+django<=1.8.99
 
-# django packages
-Django>=1.8
-djangorestframework>=3.1
-django-mptt
-django-filter>=0.10
-django-polymorphic-tree
+# Configuration
+django-environ==0.4.0
+django-secure==1.0.1
 
-requests
-cutplace
+# Forms
+django-braces==1.8.1
+django-crispy-forms==1.5.2
+django-floppyforms==1.5.2
 
+# Models
+django-model-utils==2.4
+
+# Workflow
+django_polymorphic
+python-magic
+
+# Images
+Pillow==3.1.1
+
+# For user registration, either via email or social
+# Well-built with regular release cycles!
+django-allauth==0.24.1
+
+
+# Python-PostgreSQL Database Adapter
+psycopg2==2.6.1
+
+# Unicode slugification
+unicode-slugify==0.1.3
+django-autoslug==1.9.3
+
+# Time zones support
+pytz==2015.7
+
+# Redis support
+django-redis==4.3.0
+redis>=2.10.0
+
+
+### PRODUCTION
+# WSGI Handler
+# ------------------------------------------------
+gevent==1.1rc3
+#gunicorn==19.4.5
+uwsgi==2.0.12
+
+# Static and Media Storage
+# ------------------------------------------------
+boto==2.39.0
+django-storages-redux<=1.3.99
+Collectfast==0.2.3
+
+# Mailgun Support
+# ---------------
+django-mailgun==0.8.0
+
+# Newrelic agent for performance monitoring
+# -----------------------------------------
 newrelic
-#DEV
-ipdb>=0.8
-ipython>=3
-django-extensions>=1.5.5
-django-debug-toolbar
 
-#TEST
-pytest-pythonpath>=0.6
-pytest-django>=2.8.0
-factory_boy>=2.5.2
+
+###
