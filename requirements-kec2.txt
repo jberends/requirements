@@ -62,5 +62,10 @@ django-mailgun==0.8.0
 # -----------------------------------------
 newrelic
 
+# Front-end synchronization
+django-websocket-redis==0.4.6
+django-redis-sessions==0.5.0
+wsaccel==0.6.2
+
 
 ###
