@@ -15,10 +15,13 @@ testfixtures==4.9.1
 line_profiler
 jsonschema==2.5.1
 
-django-jenkins==0.18.1
+django-jenkins==0.110.0
 
 #sphinx documentation
 Sphinx
 
 # Testing websockets
 websocket-client==0.35.0
+
+# parallel testing
+tblib
