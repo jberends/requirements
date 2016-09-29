@@ -17,7 +17,7 @@ django-crispy-forms==1.6.0
 django-floppyforms==1.7.0
 
 # Models
-django-model-utils==2.5.2
+django-model-utils==2.6
 
 # Images
 Pillow==3.3.1
@@ -37,7 +37,7 @@ django-autoslug==1.9.3
 pytz==2016.6.1
 
 # Redis support
-django-redis==4.4.4
+django-redis==4.5.0
 redis>=2.10.0
 
 # Celery
@@ -57,29 +57,27 @@ djangorestframework-filters<=0.9.99
 
 djangorestframework-recursive==0.1.1
 drf-extensions==0.3.1
+django-rest-auth==0.8.1
 
 # additional renderers
-djangorestframework-xml
-djangorestframework-csv
+djangorestframework-xml==1.3.0
+djangorestframework-csv==1.4.1
 
-django-rest-auth
 
 # Workflow
 django_polymorphic==1.0.1
-python-magic
+python-magic==0.4.12
 
 # Template compression - Legacy KEC-1
 django-appconf==1.0.2
-django-compressor==1.6
-#beautifulsoup4
+django-compressor==2.1
 
 # For cloning purposes of non tree objects
-toposort
+toposort==1.4
 
 # Front-end synchronization
 #django-websocket-redis==0.4.6
 django-redis-sessions==0.5.6
-#wsaccel==0.6.2
 
 # User permissions
 #dry-rest-permissions
