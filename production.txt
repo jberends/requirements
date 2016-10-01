@@ -24,4 +24,4 @@ newrelic
 
 # Sentry uses raven
 # -----------------------------------------
-raven
+raven==5.27.1
