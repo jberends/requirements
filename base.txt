@@ -65,7 +65,7 @@ djangorestframework-csv==1.4.1
 
 
 # Workflow
-django_polymorphic==1.0.1
+django-polymorphic==1.0.2
 python-magic==0.4.12
 
 # Template compression - Legacy KEC-1
