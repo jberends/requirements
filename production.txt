@@ -20,8 +20,9 @@ django-mailgun==0.9.1
 
 # Newrelic agent for performance monitoring
 # -----------------------------------------
-newrelic==2.70.0.51
+newrelic
 
 # Sentry uses raven
 # -----------------------------------------
-raven==5.27.1
+raven
+
