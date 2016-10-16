@@ -8,4 +8,4 @@ django-debug-toolbar==1.6
 ipdb<=0.10.99
 
 # werkzeug for runserver_plus
-werkzeug
+werkzeug==0.11.11
