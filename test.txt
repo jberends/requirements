@@ -11,7 +11,7 @@ pytest-django==3.0.0
 pytest-sugar==0.7.1
 
 # Custom KEC2
-testfixtures==4.11.0
+testfixtures==4.12.0
 line_profiler==1.0
 jsonschema==2.5.1
 
