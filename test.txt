@@ -12,7 +12,7 @@ pytest-sugar==0.7.1
 
 # Custom KEC2
 testfixtures==4.11.0
-line_profiler==1.0
+line-profiler==2.0
 jsonschema==2.5.1
 
 django-jenkins==0.110.0
