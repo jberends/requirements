@@ -68,7 +68,7 @@ django-appconf==1.0.2
 django-compressor==2.1
 
 # For cloning purposes of non tree objects
-toposort==1.4
+toposort==1.5
 
 # Front-end synchronization
 django-redis-sessions==0.5.6
