@@ -1,0 +1,4 @@
+# pyup settings
+# see: https://pyup.io/docs/configuration/#config-file
+
+pin: False
