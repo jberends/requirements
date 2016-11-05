@@ -79,7 +79,7 @@ django-guardian==1.4.6
 
 # Django channels as message bus for ke-vents
 channels<=0.17.99
-asgi-redis<=0.17.99
+asgi-redis==1.0.0
 
 # Django
 django-extensions==1.7.4
