@@ -59,7 +59,7 @@ django-filter==0.15.3
 # additional renderers
 djangorestframework-xml==1.3.0
 djangorestframework-csv==2.0.0
-xlsxwriter==0.9.4
+xlsxwriter==0.9.6
 
 # Workflow
 django_polymorphic==1.0.2
