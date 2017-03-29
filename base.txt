@@ -87,4 +87,4 @@ daphne==1.0.1
 Twisted==16.6.0
 
 # Django
-django-extensions==1.7.5
+django-extensions==1.7.7
