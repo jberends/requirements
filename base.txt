@@ -87,7 +87,7 @@ daphne==1.1.0
 Twisted==17.1.0
 
 # Django
-django-extensions==1.7.5
+django-extensions==1.7.9
 
 # Feature flags
 django-waffle==0.11.1
