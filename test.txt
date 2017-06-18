@@ -22,7 +22,7 @@ django-jenkins==0.110.0
 Sphinx==1.5.5
 
 # Testing websockets
-websocket-client==0.40.0
+websocket-client==0.42.0
 
 # parallel testing
 tblib==1.3.2
