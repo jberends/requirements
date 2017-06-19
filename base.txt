@@ -92,4 +92,4 @@ daphne==1.2.0
 Twisted==17.5.0
 
 # json conversion
-simplejson==3.10.0
+simplejson==3.11.1
