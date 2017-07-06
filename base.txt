@@ -23,7 +23,7 @@ django-model-utils==3.0.0
 django-extensions==1.8.1
 
 # Images
-Pillow==4.2.0
+Pillow==4.2.1
 
 # For user registration, either via email or social
 # Well-built with regular release cycles!
