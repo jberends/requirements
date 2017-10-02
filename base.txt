@@ -78,7 +78,7 @@ django-compressor==2.2
 toposort==1.5
 
 # Front-end synchronization
-django-redis-sessions==0.6
+django-redis-sessions==0.6.1
 
 # User permissions
 rules==1.2.1
