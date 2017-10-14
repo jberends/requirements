@@ -62,7 +62,7 @@ django-filter==1.0.4  # pinned to <= 1.0.1 to avoid forward incompatibility chan
 # additional renderers
 djangorestframework-xml==1.3.0
 djangorestframework-csv==2.0.0
-xlsxwriter==0.9.9
+xlsxwriter==1.0.1
 django-codemirror2==0.2
 latex==0.6.4
 django-rest-swagger==2.1.2
