@@ -17,7 +17,7 @@ django-crispy-forms==1.6.1
 django-floppyforms==1.7.0
 
 # Models
-django-model-utils==3.0.0
+django-model-utils==3.1.1
 
 # Django Extensions
 django-extensions==1.9.0
