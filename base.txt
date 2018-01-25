@@ -68,7 +68,7 @@ latex==0.6.4
 django-rest-swagger==2.1.2
 
 # Workflow
-django_polymorphic==1.2
+django_polymorphic==2.0
 python-magic==0.4.13
 
 django-appconf==1.0.2
