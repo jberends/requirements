@@ -82,7 +82,7 @@ django-redis-sessions==0.6
 
 # User permissions
 rules==1.2.1
-dry-rest-permissions==0.1.9
+dry-rest-permissions==0.1.10
 
 # Django channels as message bus for ke-vents
 channels==1.1.6
