@@ -87,7 +87,7 @@ dry-rest-permissions==0.1.9
 # Django channels as message bus for ke-vents
 channels==1.1.6
 asgi-redis==1.4.2
-daphne==1.3.0
+daphne==2.1.0
 
 # Due to websockets disconnect
 Twisted==17.5.0
