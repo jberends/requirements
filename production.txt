@@ -25,3 +25,7 @@ newrelic
 # Sentry uses raven
 # -----------------------------------------
 raven
+
+# Datadog agent for performance monitoring
+# -----------------------------------------
+ddtrace
