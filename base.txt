@@ -50,7 +50,7 @@ celery<=4.1.99
 ## Your custom requirements go here
 # Product Model
 #django-mptt==0.9.0
-django-bulk-update==2.1.0
+django-bulk-update==2.2.0
 toolz==0.9.0
 
 # REST API
