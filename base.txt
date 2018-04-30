@@ -68,7 +68,7 @@ django-filter==1.1.0
 xlsxwriter==1.0.4
 django-codemirror2==0.2
 latex==0.7.0
-django-rest-swagger==2.1.2
+django-rest-swagger==2.2.0
 
 # Workflow
 python-magic==0.4.15
