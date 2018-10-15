@@ -92,7 +92,7 @@ asgi-redis==1.4.3
 daphne==1.3.0  #2.0.4  # 1.3.0
 
 # Due to websockets disconnect
-Twisted==18.7.0
+Twisted==18.9.0
 
 # json conversion
 simplejson==3.16.0
