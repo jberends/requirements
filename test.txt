@@ -18,7 +18,7 @@ xlrd==1.1.0
 django-jenkins==0.110.0
 
 #sphinx documentation
-Sphinx==1.7.6
+Sphinx==1.8.5
 
 # Testing websockets
 websocket-client==0.48.0
