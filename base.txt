@@ -59,7 +59,7 @@ djangorestframework==3.7.7
 #djangorestframework-filters==0.10.1
 djangorestframework-recursive==0.1.2
 drf-extensions==0.3.1
-django-rest-auth==0.9.3
+django-rest-auth==0.9.5
 django-filter==1.1.0
 
 # additional renderers
