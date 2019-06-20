@@ -103,7 +103,7 @@ ujson==1.35
 progress==1.4
 
 # sim additions
-docker==3.4.1  # former: 2.5.0
+docker==4.0.2  # former: 2.5.0
 docker-pycreds == 0.3.0
 envparse==0.2.0
 
