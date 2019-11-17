@@ -123,4 +123,4 @@ django-cors-headers==3.0.2
 python-gnupg==0.4.4
 
 # table display
-tabulate==0.8.3
+tabulate==0.8.6
