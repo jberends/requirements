@@ -56,7 +56,7 @@ django-bulk-update==2.2.0
 toolz==0.9.0
 
 # REST API
-djangorestframework==3.9.4
+djangorestframework==3.11.0
 
 #djangorestframework-filters==0.10.1
 djangorestframework-recursive==0.1.2
