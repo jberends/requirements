@@ -100,7 +100,7 @@ Twisted<=18.7.99
 # json conversion
 simplejson==3.16.0
 jsonschema==3.0.1
-ujson==1.35
+ujson==2.0.2
 
 # yaml conversion
 PyYAML==3.13
