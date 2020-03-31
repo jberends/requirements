@@ -9,7 +9,7 @@ django<=1.11.99
 
 # Configuration
 django-environ==0.4.5
-django-secure==1.0.1
+django-secure==1.0.2
 
 # Forms
 django-braces==1.13.0
