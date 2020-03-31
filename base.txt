@@ -76,7 +76,7 @@ django-rest-swagger==2.2.0
 # Workflow
 python-magic==0.4.15
 
-django-appconf==1.0.3
+django-appconf==1.0.4
 django-compressor==2.3
 
 # For cloning purposes of non tree objects
