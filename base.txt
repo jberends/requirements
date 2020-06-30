@@ -109,7 +109,7 @@ PyYAML==3.13
 progress==1.5
 
 # sim additions
-docker==4.0.2  # former: 2.5.0
+docker==4.2.2  # former: 2.5.0
 docker-pycreds == 0.4.0
 envparse==0.2.0
 
