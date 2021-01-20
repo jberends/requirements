@@ -103,7 +103,7 @@ jsonschema==3.0.1
 ujson==1.35
 
 # yaml conversion
-PyYAML==3.13
+PyYAML==5.4
 
 # progressbar for use in commands
 progress==1.5
