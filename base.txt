@@ -106,7 +106,7 @@ ujson==1.35
 PyYAML==3.13
 
 # progressbar for use in commands
-progress==1.5
+progress==1.6
 
 # sim additions
 docker==4.0.2  # former: 2.5.0
