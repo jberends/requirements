@@ -141,7 +141,7 @@ requests-toolbelt==0.9.1
 
 # geojson conversion
 geojson==2.5.0
-pyproj==3.0.1
+pyproj==3.3.0
 
 # management commands
 fuzzywuzzy==0.18.0
