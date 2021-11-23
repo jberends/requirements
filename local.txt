@@ -2,10 +2,12 @@
 # loading requirements/test implies, loading requirements/base
 -r test.txt
 
-django-debug-toolbar<=1.9.99
+django-debug-toolbar~=3.0
 
 # improved REPL
-ipdb<=0.11.99
+ipdb~=0.13.0
 
 # werkzeug for runserver_plus
-werkzeug<=0.14.99
+werkzeug==1.0.1
+
+uvicorn

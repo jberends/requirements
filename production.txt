@@ -2,30 +2,18 @@
 #	production that isn't in development.
 -r base.txt
 
-# WSGI Handler
+# ASGI Handler
 # ------------------------------------------------
-#gevent==1.1.2
-#gunicorn==19.4.5
-#uwsgi==2.0.14
+gunicorn~=20.1.0
+uvicorn[standard]~=0.13.0
 
 # Static and Media Storage
 # ------------------------------------------------
 boto==2.49.0
-django-storages-redux<=1.3.99
-Collectfast==0.6.2
-
-# Mailgun Support
-# ---------------
-#django-mailgun==0.9.1
-
-# Newrelic agent for performance monitoring
-# -----------------------------------------
-#newrelic
+django-storages~=1.11.0
+Collectfast~=2.2.0
 
 # Sentry uses raven
 # -----------------------------------------
-raven
-
-# Datadog agent for performance monitoring
-# -----------------------------------------
-ddtrace
+sentry-sdk~=1.0.0
+aiocontextvars~=0.2.2

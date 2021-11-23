@@ -1,126 +1,157 @@
-# Wheel 0.25+ needed to install certain packages on CPython 3.5+
-# like Pillow and psycopg2
-# See http://bitly.com/wheel-building-fails-CPython-35
-# Verified bug on Python 3.5.1
-wheel>=0.31
+wheel~=0.36.0  # latest wheel 0.36.*
+setuptools~=56.0 # latest setuptools 56.*
 
 # Django
-django<=1.11.99
+django~=3.1.0  # ~= means latest in the 3.1.* of releases.
 
 # Configuration
 django-environ==0.4.5
-django-secure==1.0.1
 
 # Forms
-django-braces==1.13.0
-django-crispy-forms<=1.7.99
-django-floppyforms<=1.7.99
-pygments==2.4.2
+django-braces==1.14.0
+django-crispy-forms==1.11.2
+django-floppyforms==1.9.0
+pygments==2.9.0
 
 # Models
-django-model-utils==3.2.0
+django-model-utils==4.1.1
 
 # Django Extensions
-django-extensions<=2.0.99
+django-extensions==3.1.3
 
 # Images
-Pillow==5.1.0  # 5.2.0 is not compatible with latest Django 1.11.16
+Pillow==8.2.0
 piexif==1.1.3
+pilkit==2.0
 
 # For user registration, either via email or social
 # Well-built with regular release cycles!
-django-allauth==0.39.1
+django-allauth==0.44.0
 
 # Python-PostgreSQL Database Adapter
-psycopg2-binary==2.8.3
+psycopg2-binary~=2.9.0
 
 # Unicode slugification
 unicode-slugify==0.1.3
-django-autoslug==1.9.4
+django-autoslug==1.9.8
 
 # Time zones support
-pytz==2019.1
+pytz==2021.1
 
 # Redis support
-django-redis==4.10.0
-redis<=2.99
+django-redis==4.12.1
+redis==3.5.3
 
 # Celery
-celery<=4.1.99
-kombu<=4.2.99
+celery==5.1.2
+kombu==5.1.0
 
 ## Your custom requirements go here
 # Product Model
-django-mptt==0.10.0
+django-mptt==0.12.0
 django-bulk-update==2.2.0
-toolz==0.9.0
+toolz==0.11.1
 
 # REST API
-djangorestframework==3.9.4
-
-#djangorestframework-filters==0.10.1
+djangorestframework==3.12.4
 djangorestframework-recursive==0.1.2
-# drf-extensions==0.3.1  # deprecated not compatible with drf >= 3.8
 django-rest-auth==0.9.5
-django-filter==1.1.0
-djangorestframework_simplejwt==4.3.0
+django-filter==2.4.0
+djangorestframework_simplejwt>=4.4.0
+drf-yasg==1.20.0
 
-# additional renderers
-#djangorestframework-xml==1.3.0
-#djangorestframework-csv==2.1.0
-xlsxwriter==1.1.8
+#
+# Data science pacakges and excel handling
+#
+# openpyxl in favor of xlrd and xlsxwriter for reading xls, xlsx files; or writing xlsx files
+# (see https://pandas.pydata.org/pandas-docs/stable/whatsnew/v1.2.0.html)
+openpyxl==3.0.7
+xlsxwriter==1.4.2  # supports new style writing to xlsx, openpyxl is prefered - to be depr.
+xlrd==2.0.1  # only supports reading old style .xls files
+
 django-codemirror2==0.2
 latex==0.7.0
-django-rest-swagger==2.2.0
+pandas==1.3.0
+
+# Converting HTML to Latex for the HTML widgets in the PDF exporter
+pypandoc==1.5
 
 # Workflow
-python-magic==0.4.15
+python-magic==0.4.22
 
-django-appconf==1.0.3
-django-compressor==2.3
+django-appconf==1.0.4
+django-compressor==2.4.1
 
 # For cloning purposes of non tree objects
-toposort==1.5
+toposort==1.6
 
 # Front-end synchronization
-django-redis-sessions==0.6.1
+django-redis-sessions==0.6.2
 
 # User permissions
-rules==1.3
+rules==2.2
 dry-rest-permissions==0.1.10
 
 # Django channels as message bus for ke-vents
-channels==1.1.6  #2.0.2
-asgi-redis==1.4.3
-daphne==1.3.0  #2.0.4  # 1.3.0
+channels==3.0.3
+channels-redis==3.2.0
+# daphne==2.5.0
+asgiref==3.3.4
 
 # Due to websockets disconnect
-Twisted<=18.7.99
+Twisted~=20.3.0  # put Twisted below 21.x as incompatible with uvicorn[standard]~=0.13.0 (MAY21)
+incremental~=21.3.0  # needed for succesful installation of Twisted 20.3.0 otherwise breaks in prod for new depl.
 
 # json conversion
-simplejson==3.16.0
-jsonschema==3.0.1
-ujson==1.35
+simplejson==3.17.2
+jsonschema==3.2.0
+ujson==4.0.2
 
 # yaml conversion
-PyYAML==3.13
+PyYAML==5.4.1
 
 # progressbar for use in commands
 progress==1.5
 
 # sim additions
-docker==4.0.2  # former: 2.5.0
-docker-pycreds == 0.4.0
+docker~=5.0.0  # breaking change in 4.3 that prevented docker from runing local
+docker-pycreds==0.4.0
 envparse==0.2.0
 
 # version parsing
-semver==2.8.1
+semver==2.13.0
 
 # cors for KEC3
-django-cors-headers==3.0.2
+django-cors-headers==3.7.0
 
 # kecpkg checking
-python-gnupg==0.4.4
+python-gnupg==0.4.7
 
 # table display
-tabulate==0.8.3
+tabulate==0.8.9
+
+# QR code
+PyQRCode==1.2.1
+# recommended by PyQRCode to write pngs.
+pypng==0.0.20
+
+# extern api calling
+requests==2.25.1
+requests-toolbelt==0.9.1
+
+# geojson conversion
+geojson==2.5.0
+pyproj==3.0.1
+
+# management commands
+fuzzywuzzy==0.18.0
+
+# anonymise users
+# audit log
+django-easy-audit~=1.3.0
+
+# anoymise users
+Faker~=8.1.0
+
+# create workflows
+factory-boy~=3.2.0

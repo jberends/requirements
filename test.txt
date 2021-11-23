@@ -5,17 +5,12 @@ coverage
 django_coverage_plugin
 flake8
 django-test-plus
-factory_boy
 
 pytest-django
 pytest-sugar
 
 # Custom KEC2
 testfixtures
-line_profiler
-xlrd
-
-django-jenkins
 
 #sphinx documentation
 #Sphinx
@@ -28,3 +23,7 @@ tblib
 
 # mocking
 mock
+
+# sentry
+sentry-sdk
+aiocontextvars
