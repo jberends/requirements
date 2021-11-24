@@ -125,7 +125,7 @@ semver==2.13.0
 django-cors-headers==3.7.0
 
 # kecpkg checking
-python-gnupg==0.4.7
+python-gnupg==0.4.8
 
 # table display
 tabulate==0.8.9
