@@ -80,7 +80,7 @@ pypandoc==1.5
 python-magic==0.4.22
 
 django-appconf==1.0.4
-django-compressor==2.4.1
+django-compressor==3.1
 
 # For cloning purposes of non tree objects
 toposort==1.6
