@@ -43,7 +43,7 @@ django-redis==4.12.1
 redis==3.5.3
 
 # Celery
-celery==5.1.2
+celery==5.2.2
 kombu==5.1.0
 
 ## Your custom requirements go here
