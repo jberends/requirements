@@ -44,7 +44,7 @@ redis==3.5.3
 
 # Celery
 celery==5.1.2
-kombu==5.1.0
+kombu==5.2.3
 
 ## Your custom requirements go here
 # Product Model
