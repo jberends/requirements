@@ -89,7 +89,7 @@ toposort==1.6
 django-redis-sessions==0.6.2
 
 # User permissions
-rules==2.2
+rules==3.2.1
 dry-rest-permissions==0.1.10
 
 # Django channels as message bus for ke-vents
