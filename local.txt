@@ -8,6 +8,6 @@ django-debug-toolbar~=3.0
 ipdb~=0.13.0
 
 # werkzeug for runserver_plus
-werkzeug==1.0.1
+werkzeug==2.1.1
 
 uvicorn
