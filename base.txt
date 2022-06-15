@@ -5,7 +5,7 @@ setuptools~=56.0 # latest setuptools 56.*
 django~=3.1.0  # ~= means latest in the 3.1.* of releases.
 
 # Configuration
-django-environ==0.4.5
+django-environ==0.9.0
 
 # Forms
 django-braces==1.14.0
