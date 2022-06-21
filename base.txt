@@ -128,7 +128,7 @@ django-cors-headers==3.7.0
 python-gnupg==0.4.7
 
 # table display
-tabulate==0.8.9
+tabulate==0.8.10
 
 # QR code
 PyQRCode==1.2.1
