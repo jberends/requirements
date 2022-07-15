@@ -133,7 +133,7 @@ tabulate==0.8.9
 # QR code
 PyQRCode==1.2.1
 # recommended by PyQRCode to write pngs.
-pypng==0.0.20
+pypng==0.20220715.0
 
 # extern api calling
 requests==2.25.1
