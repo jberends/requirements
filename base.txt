@@ -58,7 +58,7 @@ djangorestframework-recursive==0.1.2
 django-rest-auth==0.9.5
 django-filter==2.4.0
 djangorestframework_simplejwt>=4.4.0
-drf-yasg==1.20.0
+drf-yasg==1.21.3
 
 #
 # Data science pacakges and excel handling
