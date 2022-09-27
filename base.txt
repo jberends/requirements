@@ -48,7 +48,7 @@ kombu==5.1.0
 
 ## Your custom requirements go here
 # Product Model
-django-mptt==0.12.0
+django-mptt==0.14.0
 django-bulk-update==2.2.0
 toolz==0.11.1
 
