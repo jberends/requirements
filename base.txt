@@ -137,7 +137,7 @@ pypng==0.0.20
 
 # extern api calling
 requests==2.25.1
-requests-toolbelt==0.9.1
+requests-toolbelt==0.10.0
 
 # geojson conversion
 geojson==2.5.0
