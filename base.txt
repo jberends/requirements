@@ -1,63 +1,67 @@
-wheel~=0.36.0  # latest wheel 0.36.*
-setuptools~=56.0 # latest setuptools 56.*
+wheel~=0.37.0
+setuptools~=63.1
 
 # Django
-django~=3.1.0  # ~= means latest in the 3.1.* of releases.
+django~=3.2.14  # ~= means latest in the 3.2.* of releases.
+
+# Required by argon2 password hasher
+argon2-cffi>= 19.1.0
 
 # Configuration
-django-environ==0.4.5
+django-environ==0.9.0
 
 # Forms
-django-braces==1.14.0
-django-crispy-forms==1.11.2
-django-floppyforms==1.9.0
-pygments==2.9.0
+django-braces~=1.15.0
+django-crispy-forms~=1.14.0
+django-floppyforms~=1.9.0
+pygments~=2.12.0
 
 # Models
-django-model-utils==4.1.1
+django-model-utils==4.2.0
 
 # Django Extensions
-django-extensions==3.1.3
+django-extensions==3.2.0
 
 # Images
-Pillow==8.2.0
+Pillow==9.2.0
 piexif==1.1.3
 pilkit==2.0
 
 # For user registration, either via email or social
 # Well-built with regular release cycles!
-django-allauth==0.44.0
+django-allauth~=0.51.0
 
 # Python-PostgreSQL Database Adapter
-psycopg2-binary~=2.9.0
+psycopg2-binary~=2.9.3
 
 # Unicode slugification
-unicode-slugify==0.1.3
+unicode-slugify==0.1.5
 django-autoslug==1.9.8
 
 # Time zones support
-pytz==2021.1
+pytz==2022.1
 
 # Redis support
-django-redis==4.12.1
-redis==3.5.3
+django-redis==5.2.0
+redis~=4.3.4
 
 # Celery
-celery==5.1.2
-kombu==5.1.0
+celery~=5.2.7
+kombu~=5.2.4
+django_celery_results~=2.4.0
 
 ## Your custom requirements go here
 # Product Model
-django-mptt==0.12.0
+django-mptt==0.13.4
 django-bulk-update==2.2.0
-toolz==0.11.1
+toolz==0.12.0
 
 # REST API
-djangorestframework==3.12.4
+djangorestframework==3.13.1
 djangorestframework-recursive==0.1.2
 django-rest-auth==0.9.5
-django-filter==2.4.0
-djangorestframework_simplejwt>=4.4.0
+django-filter~=22.1
+djangorestframework_simplejwt~=5.2.0
 drf-yasg==1.20.0
 
 #
@@ -65,53 +69,57 @@ drf-yasg==1.20.0
 #
 # openpyxl in favor of xlrd and xlsxwriter for reading xls, xlsx files; or writing xlsx files
 # (see https://pandas.pydata.org/pandas-docs/stable/whatsnew/v1.2.0.html)
-openpyxl==3.0.7
-xlsxwriter==1.4.2  # supports new style writing to xlsx, openpyxl is prefered - to be depr.
+openpyxl~=3.0.10
+xlsxwriter~=1.4.5  # supports new style writing to xlsx, openpyxl is prefered - to be depr - keep it 1.4.x
 xlrd==2.0.1  # only supports reading old style .xls files
 
 django-codemirror2==0.2
 latex==0.7.0
-pandas==1.3.0
+pandas~=1.4.3
 
 # Converting HTML to Latex for the HTML widgets in the PDF exporter
-pypandoc==1.5
+pypandoc~=1.8.1
+
+# Testing if PDFs are corrupted for the PDF exporter
+PyPDF2~=2.5.0
 
 # Workflow
-python-magic==0.4.22
+python-magic~=0.4.27
 
-django-appconf==1.0.4
-django-compressor==2.4.1
+django-appconf==1.0.5
+django-compressor~=4.0
 
 # For cloning purposes of non tree objects
-toposort==1.6
+toposort==1.7
 
 # Front-end synchronization
 django-redis-sessions==0.6.2
 
 # User permissions
-rules==2.2
+rules~=3.3
 dry-rest-permissions==0.1.10
 
 # Django channels as message bus for ke-vents
-channels==3.0.3
-channels-redis==3.2.0
+channels==3.0.5
+channels-redis==3.4.0
 # daphne==2.5.0
-asgiref==3.3.4
+asgiref==3.5.2
 
 # Due to websockets disconnect
-Twisted~=20.3.0  # put Twisted below 21.x as incompatible with uvicorn[standard]~=0.13.0 (MAY21)
+Twisted~=22.4 # put Twisted below 21.x as incompatible with uvicorn[standard]~=0.13.0 (MAY21)
 incremental~=21.3.0  # needed for succesful installation of Twisted 20.3.0 otherwise breaks in prod for new depl.
 
 # json conversion
-simplejson==3.17.2
-jsonschema==3.2.0
-ujson==4.0.2
+simplejson~=3.17.6
+jsonschema~=4.6.2
+ujson~=5.4.0
 
 # yaml conversion
-PyYAML==5.4.1
+PyYAML~=6.0
 
 # progressbar for use in commands
-progress==1.5
+progress==1.6
+tqdm~=4.64.0
 
 # sim additions
 docker~=5.0.0  # breaking change in 4.3 that prevented docker from runing local
@@ -122,36 +130,46 @@ envparse==0.2.0
 semver==2.13.0
 
 # cors for KEC3
-django-cors-headers==3.7.0
+django-cors-headers~=3.13.0
 
 # kecpkg checking
-python-gnupg==0.4.7
+python-gnupg~=0.4.9
 
 # table display
-tabulate==0.8.9
+tabulate~=0.8.10
 
 # QR code
 PyQRCode==1.2.1
 # recommended by PyQRCode to write pngs.
-pypng==0.0.20
+pypng==0.0.21
 
 # extern api calling
-requests==2.25.1
+requests~=2.28.1
 requests-toolbelt==0.9.1
 
 # geojson conversion
-geojson==2.5.0
-pyproj==3.0.1
+geojson~=2.5.0
+pyproj~=3.3.1
 
 # management commands
 fuzzywuzzy==0.18.0
 
-# anonymise users
-# audit log
-django-easy-audit~=1.3.0
+# pydantic data checking
+pydantic~=1.9.1
 
-# anoymise users
-Faker~=8.1.0
+# datadog
+datadog~=0.44.0
+
+# audit log
+django-easy-audit~=1.3.3
+
+# anonymize users
+Faker~=13.15
+shortuuid~=1.0.9
 
 # create workflows
 factory-boy~=3.2.0
+
+# s3 storages
+boto3==1.24.44
+django-storages==1.12.3

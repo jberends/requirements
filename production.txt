@@ -5,15 +5,15 @@
 # ASGI Handler
 # ------------------------------------------------
 gunicorn~=20.1.0
-uvicorn[standard]~=0.13.0
+uvicorn[standard]~=0.18.2
 
 # Static and Media Storage
 # ------------------------------------------------
 boto==2.49.0
-django-storages~=1.11.0
+django-storages~=1.12.0
 Collectfast~=2.2.0
 
 # Sentry uses raven
 # -----------------------------------------
-sentry-sdk~=1.0.0
+sentry-sdk~=1.6
 aiocontextvars~=0.2.2

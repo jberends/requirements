@@ -1,13 +1,22 @@
 -r base.txt
 
+# distutils -> packaging to remove some deprecation warnings.
+pip
+packaging
+wheel
+
 # Test dependencies go here.
 coverage
 django_coverage_plugin
 flake8
+flake8-docstrings
+flake8-gl-codeclimate
 django-test-plus
 
+pytest
 pytest-django
-pytest-sugar
+pytest-xdist~=2.5
+pytest-cov
 
 # Custom KEC2
 testfixtures
@@ -23,6 +32,8 @@ tblib
 
 # mocking
 mock
+# mock boto3 S3
+moto[s3]==3.1.17
 
 # sentry
 sentry-sdk
