@@ -1,8 +1,8 @@
 wheel~=0.37.0
-setuptools~=63.1
+setuptools~=65.5
 
 # Django
-django~=3.2.14  # ~= means latest in the 3.2.* of releases.
+django~=3.2.16  # ~= means latest in the 3.2.* of releases.
 
 # Required by argon2 password hasher
 argon2-cffi>= 19.1.0
@@ -14,16 +14,16 @@ django-environ==0.9.0
 django-braces~=1.15.0
 django-crispy-forms~=1.14.0
 django-floppyforms~=1.9.0
-pygments~=2.12.0
+pygments~=2.13
 
 # Models
 django-model-utils==4.2.0
 
 # Django Extensions
-django-extensions==3.2.0
+django-extensions~=3.2.1
 
 # Images
-Pillow==9.2.0
+Pillow~=9.3
 piexif==1.1.3
 pilkit==2.0
 
@@ -32,14 +32,14 @@ pilkit==2.0
 django-allauth~=0.51.0
 
 # Python-PostgreSQL Database Adapter
-psycopg2-binary~=2.9.3
+psycopg2-binary~=2.9.5
 
 # Unicode slugification
 unicode-slugify==0.1.5
 django-autoslug==1.9.8
 
 # Time zones support
-pytz==2022.1
+pytz~=2022.6
 
 # Redis support
 django-redis==5.2.0
@@ -52,17 +52,17 @@ django_celery_results~=2.4.0
 
 ## Your custom requirements go here
 # Product Model
-django-mptt==0.13.4
+django-mptt==0.14.0
 django-bulk-update==2.2.0
 toolz==0.12.0
 
 # REST API
-djangorestframework==3.13.1
+djangorestframework==3.14.0
 djangorestframework-recursive==0.1.2
 django-rest-auth==0.9.5
 django-filter~=22.1
-djangorestframework_simplejwt~=5.2.0
-drf-yasg==1.20.0
+djangorestframework_simplejwt==5.2.2
+drf-yasg==1.21.4
 
 #
 # Data science pacakges and excel handling
@@ -70,18 +70,18 @@ drf-yasg==1.20.0
 # openpyxl in favor of xlrd and xlsxwriter for reading xls, xlsx files; or writing xlsx files
 # (see https://pandas.pydata.org/pandas-docs/stable/whatsnew/v1.2.0.html)
 openpyxl~=3.0.10
-xlsxwriter~=1.4.5  # supports new style writing to xlsx, openpyxl is prefered - to be depr - keep it 1.4.x
+xlsxwriter~=3.0.3  # supports new style writing to xlsx, openpyxl is prefered - to be depr - keep it 1.4.x
 xlrd==2.0.1  # only supports reading old style .xls files
 
 django-codemirror2==0.2
 latex==0.7.0
-pandas~=1.4.3
+pandas~=1.5.1
 
 # Converting HTML to Latex for the HTML widgets in the PDF exporter
-pypandoc~=1.8.1
+pypandoc~=1.10
 
 # Testing if PDFs are corrupted for the PDF exporter
-PyPDF2~=2.5.0
+PyPDF2~=2.11
 
 # Workflow
 python-magic~=0.4.27
@@ -100,29 +100,34 @@ rules~=3.3
 dry-rest-permissions==0.1.10
 
 # Django channels as message bus for ke-vents
-channels==3.0.5
-channels-redis==3.4.0
+# TODO: upgrade to channels/daphne 4.0 only by extensive testing
+# see: https://channels.readthedocs.io/en/latest/releases/4.0.0.html
+channels==3.0.5  # pin to <4.0
+channels-redis==3.4.0  # pin to <4.0
 # daphne==2.5.0
 asgiref==3.5.2
 
 # Due to websockets disconnect
-Twisted~=22.4 # put Twisted below 21.x as incompatible with uvicorn[standard]~=0.13.0 (MAY21)
-incremental~=21.3.0  # needed for succesful installation of Twisted 20.3.0 otherwise breaks in prod for new depl.
+Twisted~=22.10
+incremental~=22.10  # needed for succesful installation of Twisted 20.3.0 otherwise breaks in prod for new depl.
+attrs~=22.1  # needed for succesful instans
+
 
 # json conversion
 simplejson~=3.17.6
-jsonschema~=4.6.2
-ujson~=5.4.0
+jsonschema~=4.17
+ujson~=5.5
+orjson~=3.8
 
 # yaml conversion
 PyYAML~=6.0
 
 # progressbar for use in commands
 progress==1.6
-tqdm~=4.64.0
+tqdm~=4.64.1
 
 # sim additions
-docker~=5.0.0  # breaking change in 4.3 that prevented docker from runing local
+docker~=6.0  # breaking change in 4.3 that prevented docker from runing local
 docker-pycreds==0.4.0
 envparse==0.2.0
 
@@ -133,10 +138,10 @@ semver==2.13.0
 django-cors-headers~=3.13.0
 
 # kecpkg checking
-python-gnupg~=0.4.9
+python-gnupg~=0.5
 
 # table display
-tabulate~=0.8.10
+tabulate~=0.9
 
 # QR code
 PyQRCode==1.2.1
@@ -145,7 +150,7 @@ pypng==0.0.21
 
 # extern api calling
 requests~=2.28.1
-requests-toolbelt==0.9.1
+requests-toolbelt~=0.10
 
 # geojson conversion
 geojson~=2.5.0
@@ -164,12 +169,12 @@ datadog~=0.44.0
 django-easy-audit~=1.3.3
 
 # anonymize users
-Faker~=13.15
+Faker~=15.1
 shortuuid~=1.0.9
 
 # create workflows
 factory-boy~=3.2.0
 
 # s3 storages
-boto3==1.24.44
-django-storages==1.12.3
+boto3~=1.26
+django-storages~=1.13.1
