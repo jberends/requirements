@@ -105,7 +105,7 @@ dry-rest-permissions==0.1.10
 channels==3.0.5  # pin to <4.0
 channels-redis==3.4.0  # pin to <4.0
 # daphne==2.5.0
-asgiref==3.5.2
+asgiref==3.7.0
 
 # Due to websockets disconnect
 Twisted~=22.10
