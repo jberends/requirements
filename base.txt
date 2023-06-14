@@ -132,7 +132,7 @@ docker-pycreds==0.4.0
 envparse==0.2.0
 
 # version parsing
-semver==2.13.0
+semver==3.0.1
 
 # cors for KEC3
 django-cors-headers~=3.13.0
