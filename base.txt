@@ -61,7 +61,7 @@ djangorestframework==3.14.0
 djangorestframework-recursive==0.1.2
 django-rest-auth==0.9.5
 django-filter~=22.1
-djangorestframework_simplejwt==5.2.2
+djangorestframework_simplejwt==5.3.0
 drf-yasg==1.21.4
 
 #
