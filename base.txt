@@ -52,7 +52,7 @@ django_celery_results~=2.4.0
 
 ## Your custom requirements go here
 # Product Model
-django-mptt==0.14.0
+django-mptt==0.15.0
 django-bulk-update==2.2.0
 toolz==0.12.0
 
