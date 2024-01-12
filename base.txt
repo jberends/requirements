@@ -103,7 +103,7 @@ dry-rest-permissions==0.1.10
 # TODO: upgrade to channels/daphne 4.0 only by extensive testing
 # see: https://channels.readthedocs.io/en/latest/releases/4.0.0.html
 channels==3.0.5  # pin to <4.0
-channels-redis==3.4.0  # pin to <4.0
+channels-redis==4.2.0  # pin to <4.0
 # daphne==2.5.0
 asgiref==3.5.2
 
