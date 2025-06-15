@@ -71,7 +71,7 @@ drf-yasg==1.21.4
 # (see https://pandas.pydata.org/pandas-docs/stable/whatsnew/v1.2.0.html)
 openpyxl~=3.0.10
 xlsxwriter~=3.0.3  # supports new style writing to xlsx, openpyxl is prefered - to be depr - keep it 1.4.x
-xlrd==2.0.1  # only supports reading old style .xls files
+xlrd==2.0.2  # only supports reading old style .xls files
 
 django-codemirror2==0.2
 latex==0.7.0
