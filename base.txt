@@ -123,7 +123,7 @@ orjson~=3.8
 PyYAML~=6.0
 
 # progressbar for use in commands
-progress==1.6
+progress==1.6.1
 tqdm~=4.64.1
 
 # sim additions
