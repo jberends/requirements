@@ -177,4 +177,4 @@ factory-boy~=3.2.0
 
 # s3 storages
 boto3~=1.26
-django-storages~=1.13.1
+django-storages==1.14.6
