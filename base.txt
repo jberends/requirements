@@ -2,7 +2,7 @@ wheel~=0.37.0
 setuptools~=65.5
 
 # Django
-django~=3.2.16  # ~= means latest in the 3.2.* of releases.
+django==6.0.2  # ~= means latest in the 3.2.* of releases.
 
 # Required by argon2 password hasher
 argon2-cffi>= 19.1.0
