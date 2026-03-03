@@ -15,5 +15,5 @@ Collectfast~=2.2.0
 
 # Sentry uses raven
 # -----------------------------------------
-sentry-sdk~=1.10
+sentry-sdk==2.54.0
 aiocontextvars~=0.2.2
