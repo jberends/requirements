@@ -10,4 +10,4 @@ ipdb~=0.13.0
 # werkzeug for runserver_plus
 werkzeug~=2.2
 
-uvicorn
+uvicorn==0.41.0
