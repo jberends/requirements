@@ -4,7 +4,7 @@
 
 # ASGI Handler
 # ------------------------------------------------
-gunicorn~=20.1.0
+gunicorn==25.1.0
 uvicorn[standard]~=0.19.0
 
 # Static and Media Storage
