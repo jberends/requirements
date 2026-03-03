@@ -36,5 +36,5 @@ mock
 moto[s3]~=4.0
 
 # sentry
-sentry-sdk
+sentry-sdk==2.54.0
 aiocontextvars
